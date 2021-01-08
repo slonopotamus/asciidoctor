@@ -1251,8 +1251,8 @@ context 'Syntax Highlighter' do
       output = convert_string_to_embedded input, safe: :safe
       assert_css 'table.linenotable', output, 0
       assert_css 'pre', output, 1
-      assert_includes output, '<span class="lineno"> 1 </span>'
-      assert_includes output, '<span class="lineno">10 </span>'
+      assert_includes output, '<span class="lineno"> 1</span>'
+      assert_includes output, '<span class="lineno">10</span>'
     end
 
     test 'should line highlight specified lines' do

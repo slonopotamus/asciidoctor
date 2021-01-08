@@ -48,7 +48,7 @@ jobs:
     env:
       COVERAGE: ${{ matrix.primary }}
       JRUBY_OPTS: '-J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-Xss2m -Xcompile.invokedynamic=false'
-      PYGMENTS_VERSION: '~> 1.2.0'
+      PYGMENTS_VERSION: '~> 2.0.0'
       SOURCE_DATE_EPOCH: '1521504000'
     steps:
     - name: Checkout

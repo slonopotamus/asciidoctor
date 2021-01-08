@@ -136,7 +136,7 @@ class SyntaxHighlighter::PygmentsAdapter < SyntaxHighlighter::Base
   LinenoSpanTagCs = '<span class="lineno">\1</span>'
   PreTagCs = '<pre>\1</pre>'
   StyledLinenoColumnStartTagsRx = /<td><div class="linenodiv" style="[^"]+?"><pre style="[^"]+?">/
-  StyledLinenoSpanTagRx = %r(<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">( *\d+ )</span>)
+  StyledLinenoSpanTagRx = %r(<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">( *\d+)</span>)
   WRAPPER_CLASS = 'lineno' # doesn't appear in output; Pygments appends "table" to this value to make nested table class
   # NOTE <pre> has style attribute when pygments-css=style
   # NOTE <div> has trailing newline when pygments-linenums-mode=table
